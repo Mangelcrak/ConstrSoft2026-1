@@ -9,6 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class OrderItem {
     private long id;
-    private Item item;
+    private Item item;      // ← este Item es el del mismo package
     private ItemType itemType;
 }
+

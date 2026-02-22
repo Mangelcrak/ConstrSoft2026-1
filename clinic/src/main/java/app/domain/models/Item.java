@@ -1,14 +1,20 @@
 package app.domain.models;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Setter
-@Getter
-@NoArgsConstructor
 public class Item {
-    private long id;
-    private String name;
-    private double price;
+
+    private final  long id;
+    private final  String value;
+
+    public Item(long id, String value) {
+        this.id = id;
+        this.value = value;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }
